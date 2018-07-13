@@ -14,7 +14,7 @@ def export_selected_objects(modeladmin, request, queryset):
 admin.site.add_action(export_selected_objects, 'export_selected')
 
 class NodeAdmin(admin.ModelAdmin):
-    list_display = ('id','name','x','y','z','r','g','b')
+    list_display = ('name','id','x','y','z','r','g','b')
     pass
 
 admin.site.register(Node, NodeAdmin)

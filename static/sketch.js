@@ -1,8 +1,18 @@
 function setup() {
-  // put setup code here
+  createCanvas(windowWidth, windowHeight, WEBGL);
 }
 
-function draw() {
-  // put drawing code here
-    ellipse(50, 50, 80, 80);
+function draw(){
+  background(255);
+  box();
+  translate(100,100,-100);
+  box();
+  rotateX(radians(45));
+  translate(100,100,-100);
+  box();
+	beginShape();
+	vertex(100,23,-100);
+	vertex(200,23,-50);
+	vertex(150, 45,-100);
+	endShape();
 }

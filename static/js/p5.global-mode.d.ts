@@ -1,6 +1,6 @@
 // This file was auto-generated. Please do not edit it.
 
-///<reference path="p5.d.ts" />
+///<reference path="js/p5.d.ts" />
 
 
 // Properties from p5

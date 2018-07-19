@@ -16,6 +16,7 @@ admin.site.add_action(export_selected_objects, 'export_selected')
 class NodeAdmin(admin.ModelAdmin):
     list_display = ('name',
                     'id',
+                    'order',
                     'x',
                     'y',
                     'z',

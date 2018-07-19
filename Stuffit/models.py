@@ -7,6 +7,7 @@ class Base(models.Model):
         abstract = True
 
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    order = models.IntegerField(default=0)
     name = models.CharField(max_length=100)
     desc = models.TextField()
     created = models.DateTimeField(auto_now_add=True)
@@ -17,6 +18,9 @@ class Base(models.Model):
     r = models.FloatField(default=1.0)
     g = models.FloatField(default=1.0)
     b = models.FloatField(default=1.0)
+
+    def __str__(self):
+        return self.name
 
 
 

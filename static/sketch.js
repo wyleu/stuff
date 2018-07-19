@@ -1,5 +1,7 @@
 function setup() {
-  createCanvas(windowWidth, windowHeight, WEBGL);
+    var cnv = createCanvas(windowWidth, windowHeight, WEBGL);
+    cnv.parent('myContainer');
+
 }
 
 function draw(){
